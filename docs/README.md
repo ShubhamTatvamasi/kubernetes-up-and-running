@@ -9,3 +9,8 @@ list all the nodes in your cluster
 ```bash
 kubectl get nodes
 ```
+
+describe the node details
+```bash
+kubectl describe nodes node-1
+```
