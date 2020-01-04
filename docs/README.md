@@ -10,6 +10,11 @@ list all the nodes in your cluster
 kubectl get nodes
 ```
 
+Get more information with `-o wide`
+```bash
+kubectl get nodes minikube -o wide
+```
+
 describe the node details
 ```bash
 kubectl describe nodes node-1
