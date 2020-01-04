@@ -22,6 +22,7 @@ kubectl describe nodes node-1
 
 Get the IP of a specfic pod
 ```bash
+kubectl get pods nginx-pod -o jsonpath={.status.podIP}
 kubectl get pods nginx-pod -o jsonpath --template={.status.podIP}
 ```
 
