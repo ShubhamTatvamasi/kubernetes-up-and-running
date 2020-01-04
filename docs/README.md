@@ -12,7 +12,7 @@ kubectl get nodes
 
 Get more information with `-o wide`
 ```bash
-kubectl get nodes minikube -o wide
+kubectl get nodes -o wide
 ```
 
 describe the node details
