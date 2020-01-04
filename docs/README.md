@@ -24,3 +24,9 @@ Get the IP of a specfic pod
 ```bash
 kubectl get pods nginx-pod -o jsonpath --template={.status.podIP}
 ```
+
+Get Internal or External IP
+```bash
+kubectl get nodes -o jsonpath='{.items[*].status.addresses[?(@.type=="InternalIP")].address}'
+kubectl get nodes -o jsonpath='{.items[*].status.addresses[?(@.type=="ExternalIP")].address}'
+```
