@@ -14,3 +14,8 @@ describe the node details
 ```bash
 kubectl describe nodes node-1
 ```
+
+Get the IP of a specfic pod
+```bash
+kubectl get pods nginx-pod -o jsonpath --template={.status.podIP}
+```
