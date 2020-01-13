@@ -32,3 +32,8 @@ ALPACA_POD=$(kubectl get pods -l app=alpaca \
 kubectl port-forward $ALPACA_POD 48858:8080
 ```
 ---
+
+delete everything
+```bash
+kubectl delete svc,deploy -l app
+```
